@@ -9,7 +9,6 @@ function renderExpenses() {
   let total = 0;
   expenses.forEach((exp, index) => {
     total += exp.amount;
-
     const li = document.createElement("li");
     li.innerHTML = `
       ${exp.title} (${exp.category}) - ₹${exp.amount}
