@@ -7,6 +7,7 @@ let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
 function renderExpenses() {
   list.innerHTML = "";
   let total = 0;
+  
   expenses.forEach((exp, index) => {
     total += exp.amount;
     const li = document.createElement("li");
