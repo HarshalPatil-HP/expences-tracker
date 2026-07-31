@@ -35,4 +35,5 @@ function deleteExpense(index) {
   expenses.splice(index, 1);
   renderExpenses();
 }
+
 renderExpenses();
