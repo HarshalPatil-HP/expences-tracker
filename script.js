@@ -16,7 +16,6 @@ function renderExpenses() {
     `;
     list.appendChild(li);
   });
-
   totalEl.textContent = total;
   localStorage.setItem("expenses", JSON.stringify(expenses));
 }
