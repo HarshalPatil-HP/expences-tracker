@@ -22,7 +22,6 @@ function renderExpenses() {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
   const title = document.getElementById("title").value;
   const amount = Number(document.getElementById("amount").value);
   const category = document.getElementById("category").value;
