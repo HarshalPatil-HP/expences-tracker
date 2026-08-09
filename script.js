@@ -3,11 +3,9 @@ const list = document.getElementById("expense-list");
 const totalEl = document.getElementById("total");
 
 let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
-
 function renderExpenses() {
   list.innerHTML = "";
   let total = 0;
-  
   expenses.forEach((exp, index) => {
     total += exp.amount;
     const li = document.createElement("li");
