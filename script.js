@@ -24,7 +24,6 @@ form.addEventListener("submit", (e) => {
   const title = document.getElementById("title").value;
   const amount = Number(document.getElementById("amount").value);
   const category = document.getElementById("category").value;
-
   expenses.push({ title, amount, category });
   form.reset();
   renderExpenses();
