@@ -17,7 +17,6 @@ function renderExpenses() {
   totalEl.textContent = total;
   localStorage.setItem("expenses", JSON.stringify(expenses));
 }
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const title = document.getElementById("title").value;
