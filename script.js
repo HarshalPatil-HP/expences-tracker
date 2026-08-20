@@ -1,7 +1,6 @@
 const form = document.getElementById("expense-form");
 const list = document.getElementById("expense-list");
 const totalEl = document.getElementById("total");
-
 let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
 function renderExpenses() {
   list.innerHTML = "";
