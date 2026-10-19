@@ -29,8 +29,10 @@ form.addEventListener("submit", (e) => {
   form.reset();
   renderExpenses();
 });
+
 function deleteExpense(index) {
   expenses.splice(index, 1);
   renderExpenses();
 }
+
 renderExpenses();
