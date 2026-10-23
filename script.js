@@ -1,9 +1,7 @@
 const form = document.getElementById("expense-form");
 const list = document.getElementById("expense-list");
 const totalEl = document.getElementById("total");
-
 let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
-
 function renderExpenses() {
   list.innerHTML = "";
   let total = 0;
@@ -19,7 +17,6 @@ function renderExpenses() {
   totalEl.textContent = total;
   localStorage.setItem("expenses", JSON.stringify(expenses));
 }
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const title = document.getElementById("title").value;
@@ -29,10 +26,8 @@ form.addEventListener("submit", (e) => {
   form.reset();
   renderExpenses();
 });
-
 function deleteExpense(index) {
   expenses.splice(index, 1);
   renderExpenses();
 }
-
 renderExpenses();
